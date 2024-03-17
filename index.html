@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <!--https://cdnjs.com/libraries/jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Animação no Scroll-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-utensils" id="logo"> HEALTH</i>
+       
+       <ul id="nav_list">
+        <li class="nav-item active">
+            <a href="#home">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu">Pratos</a>
+        </li>
+        <li class="nav-item">
+            <a href="#ava">Avaliações</a>
+        </li>
+       </ul>
+
+
+       <button id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+       </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Pratos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ava">Avaliaões</a>
+                </li>
+               </ul>
+
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="corpo"></div>
+            <div id="info">
+                <h1 class="title">
+                    <span>Alimente-se</span>
+                    da melhor forma
+                </h1>
+                <p class="descricao">
+                    Aprenda a se alimentar da forma mais saudavel
+                </p>
+                <div id="card_btn">
+                    <a href="receitas.html" class="btn-default">Receitas</a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="src/banner.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="sessao-titulo">Sugestão do Dia</h2>
+            <h3 class="sessao-subtitulo">Pratos especiais</h3>
+
+            <div id="pratos">
+                <div class="prato">
+                    <img class="img-prato" src="https://gifs.eco.br/wp-content/uploads/2023/10/imagens-de-prato-saudavel-png-14.png" alt="">
+                    <h3 class="titulo-prato">Prato Nutritivo do Chef </h3>
+                    <span class="descricao-prato">Arroz com Feijão, Batatas Assadas, Salada Fresca e Carne</span>
+                </div>
+                <div class="prato">
+                    <img class="img-prato" src="https://yata.s3-object.locaweb.com.br/c5e7395c9cc22cfebae43c4e2165a615d3940e747fddc6abe3d7c545bf925e81" alt="">
+                    <h3 class="titulo-prato">Tigela Vitalidade Verde:</h3>
+                    <span class="descricao-prato"> Arroz Integral com Brócolis Grelhados e Grão de Bico Crocante</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="ava">
+            <img src="download.png" id="ava_img" alt="">
+
+            <div id="ava_content">
+                <h2 class="sessao-titulo">
+                    Depoimentos
+                </h2>
+                <h3 class="sessao-subtitulo">
+                    Opiniões de Usuários
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/avatar.png" class="feedback-avatar" alt="">
+                    
+                    <div class="feedback-content">
+                        <p>Gabriela Silva
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>Ótima opção de pratos, me ajudou a ter uma alimentaão muito mais saudável </p>
+                    </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/avatar.png" class="feedback-avatar" alt="">
+                    
+                    <div class="feedback-content">
+                        <p>Larissa Alves
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>Gostei muito da opção vegetariana, sempre ficava em duvida de como diversificar meus pratos </p>
+                    </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Mais avaliações
+                </button>
+            </div>
+        </section>
+    
+
+    </main>
+
+    <footer>
+        <img src="src/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Marcus Tunin
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/tunin.marcus/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                </div>
+        </div>
+    </footer>
+
+    <script src="src/script/script.js"></script>
+</body>
+</html>
